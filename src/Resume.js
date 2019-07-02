@@ -1,6 +1,10 @@
 import React from 'react'
-import Resume from './images/CarlyPecoraResume'
+import CarlyResume from './images/CarlyPecoraResume.pages'
 
-export default const Resume = () => {
-	return <embed src={Resume}></embed>
+export default class Resume extends React.Component {
+	render(){
+	return <div> HEllO WORLD </div>
+	}
 }
+
+// <embed src={CarlyResume}></embed>
