@@ -1,9 +1,11 @@
 import React from 'react'
-import CarlyResume from './images/CarlyPecoraResume.pages'
+import CarResume from './images/Resume.pdf'
 
 export default class Resume extends React.Component {
 	render(){
-	return <div> HEllO WORLD </div>
+	return (
+		<embed src={CarResume} ></embed>
+		)
 	}
 }
 

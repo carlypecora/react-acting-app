@@ -1,7 +1,8 @@
 import React from 'react'
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Portfolio from './Portfolio'
 import Resume from './Resume'
+// import { Mailto } from 'react-mailto'
 
 import { Navbar, Nav } from 'react-bootstrap'
 
@@ -17,23 +18,24 @@ export default class NavbarComp extends React.Component {
 
 	render() {
 		return(
-			<Router>
 				<div className="nav-div">
-					<Link to="/home" onClick={this.handleClick}><Navbar.Brand>Carly Ann </Navbar.Brand></Link>
+					<Link to="/" onClick={this.handleClick}><Navbar.Brand>Carly Ann </Navbar.Brand></Link>
 					  <Nav className="justify-content-end" activeKey="/home">
 					    <Nav.Item>
-					      <Link to="/resume" onClick={this.handleClick}>Resume</Link>
+					      <NavLink className="nav-link" to="/resume">Resume</NavLink>
 					    </Nav.Item>
 					    <Nav.Item>
-					      <Link to="/portfolio" onClick={this.handleClick}>Portfolio</Link>
+					      <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
 					    </Nav.Item>
 					    <Nav.Item>
-					      <Nav.Link eventKey="link-2">Contact</Nav.Link>
+					      <Nav.Link mailto="" eventKey="link-2">Contact</Nav.Link>
 					    </Nav.Item>
 					  </Nav>
 				</div>
-				
-			</Router>
 		)
 	}
 }
+
+
+
+//<Mailto email="carlyannpecora@gmail.com" obfuscate={true}></Mailto>

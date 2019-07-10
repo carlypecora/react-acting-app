@@ -97,7 +97,23 @@ margin-bottom: 2%;
 
 .link:hover {
     text-decoration: none;
-
 }
 
+.griddin {
+  padding-top: 3%;
+  max-width: 100%;
+}
 
+.portfolio {
+  width: 25%;
+}
+
+.car {
+  height: 400px;
+  max-width: 25%;
+}
+
+embed {
+  height: 1000px;
+  width: 100%;
+}
