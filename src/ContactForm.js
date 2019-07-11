@@ -4,7 +4,7 @@ import React from 'react';
 export default class ContactForm extends React.Component {
 	render(){
 	  return (
-	  <div className="contact">
+	  <div className="contact" id="con">
 	  <h3 className="contact-header">Contact:</h3>
 	    <form>
 		  <label className="cf">Your Email Address*

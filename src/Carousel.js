@@ -5,7 +5,8 @@ import Bloom from './images/IMG_2464.JPG'
 import Bike from './images/jj1_1474.JPG'
 import Boss from './images/jj1_2162.JPG'
 import Mirror from './images/IMG_7913.jpg'
-import Work from './images/jj1_2921.JPG'
+import Work from './images/jj1_0397.JPG'
+import Work2 from './images/jj1_0671.JPG'
 
 export default class ControlledCarousel extends React.Component {
   constructor(props, context) {
@@ -20,7 +21,7 @@ export default class ControlledCarousel extends React.Component {
   }
 
   createCarItems = () => {
-  	const imgs = [Bridge, Work, Mirror, Bike, Mirror, Boss, Bloom]
+  	const imgs = [Bridge, Work, Mirror, Bike, Boss, Bloom, Work2]
   	return imgs.map(img => {
   		return (
   		<Carousel.Item>
