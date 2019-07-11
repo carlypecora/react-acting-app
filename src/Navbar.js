@@ -28,7 +28,7 @@ export default class NavbarComp extends React.Component {
 					      <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
 					    </Nav.Item>
 					    <Nav.Item>
-					      <Nav.Link mailto="" eventKey="link-2">Contact</Nav.Link>
+					      <Nav.Link href="mailto:carlyannpecora@gmail.com" eventKey="link-2">Contact</Nav.Link>
 					    </Nav.Item>
 					  </Nav>
 				</div>
